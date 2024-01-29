@@ -1,0 +1,62 @@
+@use "../foundation/f-mixin" as *;
+@use "../foundation/f-variables" as *;
+.c-inner {
+	max-width: 1080px;
+	width: calc(100% - 40px);
+	margin-left: auto;
+	margin-right: auto;
+	@include media(sm) {
+	}
+}
+@include media(tabup) {
+	.c-tab {
+		display: none !important;
+	}
+}
+@include media(tab) {
+	.c-tab_none {
+		display: none !important;
+	}
+}
+@include media(lg) {
+	.c-sp {
+		display: none !important;
+	}
+}
+@include media(sm) {
+	.c-pc {
+		display: none !important;
+	}
+}
+.c-ofi {
+	object-fit: cover;
+	font-family: "object-fit: cover;, object-position: center;";
+	width: 100%;
+	height: 100%;
+	object-position: center;
+}
+
+@for $i from 1 through 100 {
+  .mb#{$i * 5} {
+    margin-bottom: #{$i * 5}px !important;
+    @include media(sm) {
+      margin-bottom: #{$i * 3}px !important;
+    }
+  }
+  .mt#{$i * 5} {
+    margin-top: #{$i * 5}px !important;
+    @include media(sm) {
+      margin-top: #{$i * 3}px !important;
+    }
+  }
+}
+
+.c-center {
+	text-align: center;
+}
+.c-left {
+	text-align: left;
+}
+.c-right {
+	text-align: right;
+}
