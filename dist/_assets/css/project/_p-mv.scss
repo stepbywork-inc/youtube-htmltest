@@ -1,0 +1,39 @@
+@use "../foundation/f-mixin" as *;
+@use "../foundation/f-variables" as *;
+.p-mv2 {
+  text-align: center;
+}
+.p-mv3 {
+  position: relative;
+  text-align: center;
+  &__kazari {
+    background: url(../../images/mv_kazari@2x.png) center bottom repeat-x;
+    background-size: auto 60px;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include media(sm) {
+      height: 46px;
+      background-size: auto 46px;
+    }
+  }
+}
+.p-mv4 {
+  position: relative;
+  text-align: center;
+  &__kazari {
+    background: url(../../images/mv_kazari@2x.png) center bottom repeat-x;
+    background-size: auto 60px;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include media(sm) {
+      height: 46px;
+      background-size: auto 46px;
+    }
+  }
+}
